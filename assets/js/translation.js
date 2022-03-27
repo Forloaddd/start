@@ -6,6 +6,7 @@ var Startondownloadtitle
 var error1characters
 
 let userLang = navigator.language || navigator.userLanguage
+lang = userLang.slice(0, 2)
 
 if (userLang.startsWith('es')){
     ThanksConsole = 'Gracias por usar starton browser'

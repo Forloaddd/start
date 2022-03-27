@@ -16,6 +16,8 @@ function ComplexCar(a) {
     }
 }
 
+var lang
+
 // special finds
 function SpecialFinds(o, nw) {
     let i = o // toLowerCase()
@@ -24,9 +26,9 @@ function SpecialFinds(o, nw) {
         if (ComplexCar(o)) {
             let val = o.slice(2, Infinity)
             if (nw == true) {
-                window.open("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val, '_blank').focus()
+                window.open("https://translate.google.cl/?hl=es&sl=auto&tl=" + lang +"&text=" + val, '_blank').focus()
             } else {
-                window.location.assign("https://translate.google.cl/?hl=es&sl=auto&tl=es&text=" + val)
+                window.location.assign("https://translate.google.cl/?hl=es&sl=auto&tl=" + lang +"&text=" + val)
             }
         }
         return false
