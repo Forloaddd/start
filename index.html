@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Loading...</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/iconSt.png" type="image/x-icon">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/animate.css">
+</head>
+
+<body>
+  <div class="background-overlay"></div>
+  <div class="wp"></div>
+  <div id="engine-google"></div>
+  <noscript>
+  <div class="fieldt" title="Error 881 - JavaScript no activado"></div>
+  </noscript>
+  <div class="greeting-start">
+    <h5 id="time-txt" translate="no"></h5>
+    <h5 id="gt-txt"></h5>
+  </div>
+  <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+    <form>
+      <div class="form-row">
+        <!-- form-control form-control-lg  -->
+        <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg search-input" type="search"
+            placeholder="Buscar o escribir dirección web" id="search-input" onfocusout="dsc()"></div>
+        
+     <!--      <div class="col-12 col-md-3">
+           <button class="btn btn-primary btn-block btn-lg" type="button" id="search-btn"><img
+              src="assets/img/search_30px.png" alt="Search" height="25px">
+            </button>
+          </div>
+-->
+      </div>
+    </form>
+    <!--***************************-->
+    <div id="content-preview" style="display: none;">
+      <iframe src="" id="view-i" target="_top"></iframe>
+    </div>
+    <!--***************************-->
+  </div>
+  <div class="page-prev">
+    <img src="assets/img/preview_25px.png" alt="Web Preview" title="Previsualización web (F2)" id="prev-w">
+  </div>
+  <div id="dowst"></div>
+  <div class="menuSQ">
+    <img src="assets/img/squared_menu_24px.png" alt="Squared Menu" class="menuPi" title="Aplicaciones" id="apps-menu">
+  </div>
+  <div class="hover-dis-settings"><img src="assets/img/settings_24_px.png" alt="Settings" id="settingsPc"
+      title="Configuración (Esc)" data-toggle="modal" data-target="#settings">
+  </div>
+  <p class="lbl-cor">Por <a href="https://github.com/Forloaddd/" class="link-cor" translate="no">Starton</p></a>
+  <div id="wll-go">
+    <p class="like-wallp" data-toggle="tooltip" data-placement="left" title="Mostrar fondo"><a class="lw-link-draw">¿Te
+        agrada este
+        fondo?</a></p>
+  </div>
+  <!--***************************-->
+  <!--***************************-->
+  <div class="modal fade" id="settings" tabindex="-1" role="dialog" aria-labelledby="sttgs" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Configuración</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="openinNW">
+            <input id="openNWI" type="checkbox" name="checkbox" style="margin-right: 5px;"> Abrir búsquedas en nueva
+            pestaña
+          </div>
+          <div class="autocomser">
+            <input type="checkbox" name="autocomplete" id="autocomplete-inp"
+              style="margin-right: 5px; margin-top: 10px;">
+            Autocompletar búsquedas <br>
+          </div>
+          <div class="showwallp">
+            <input type="checkbox" name="wallpaper-toogle" id="show-wallpaper"
+              style="margin-right: 5px; margin-top: 10px;" data-toggle="tooltip" data-placement="top"
+              title="Desactivar esto, puede ayudar a un menor uso de memoria ram y a tener un sitio mas rapido">
+            Mostrar fondo
+          </div>
+          <div class="separator">
+          </div>
+          <input type="button" class="btn btn-primary" id="change-wallpaper-btn" value="Cambiar fondo"
+            style="margin-top: 40px;">
+        </div>
+        <div class="modal-footer">
+          <a href="" id="clear-settings-btn" class="resetset" data-toggle="tooltip" data-placement="top"
+            title="Reiniciar todos los ajustes a los valores predeterminados">Reiniciar</a>
+          <button type="button" class="btn btn-primary" data-dismiss="modal" id="close-modal1">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--***************************-->
+  <!--***************************-->
+  <input type="button" id="show-alert" data-toggle="modal" data-target="#alertCh" hidden>
+  <!--***************************-->
+  <div class="modal fade" id="alertCh" tabindex="-1" role="dialog" aria-labelledby="sttgs" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Error al Buscar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <h6 id="alert-code">ERR</h6>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/translation.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/interactions.js"></script>
+</body>
+
+</html>
