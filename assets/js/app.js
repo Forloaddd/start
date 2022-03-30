@@ -9,7 +9,7 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
 } else if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
 
 } else if (navigator.userAgent.indexOf("Starton") > -1) {
-    
+
     console.log(ThanksConsole)
 
 } else {
@@ -51,14 +51,6 @@ function blankWall() {
         "z-index: -99; bottom: 0; top: 0; position: absolute; right: 0; left: 0; background-size: cover;}"
     document.body.appendChild(sl)
 }
-
-document.addEventListener("visibilitychange", (event) => {
-    if (document.visibilityState == "visible") {
-        window.stop()
-    } else {
-        window.Start()
-    }
-  })
 
 /*---------------------*/
 
