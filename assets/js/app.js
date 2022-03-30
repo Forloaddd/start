@@ -52,6 +52,14 @@ function blankWall() {
     document.body.appendChild(sl)
 }
 
+document.addEventListener("visibilitychange", (event) => {
+    if (document.visibilityState == "visible") {
+        window.stop()
+    } else {
+        window.Start()
+    }
+  })
+
 /*---------------------*/
 
 function startTime() {
