@@ -3,21 +3,6 @@
     console.log(response.city, response.country);
 }, "jsonp") */
 
-// browser check
-if (/MSIE 10/i.test(navigator.userAgent)) {
-
-} else if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
-
-} else if (navigator.userAgent.indexOf("Starton") > -1) {
-
-    console.log(ThanksConsole)
-
-} else {
-    let st = '<img src="assets/img/download_27px.png" alt="Download" class="dwst"' +
-        'title="' + Startondownloadtitle + '" id="dwn-starton">'
-    document.getElementById("dowst").innerHTML = st
-}
-
 var wallcant = 7;
 
 function Start() {

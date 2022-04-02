@@ -1,27 +1,21 @@
 // texts
 var greetingTimeMan
 var greetingTimeTar
-var ThanksConsole
-var Startondownloadtitle
 var error1characters
 
 let userLang = navigator.language || navigator.userLanguage
 lang = userLang.slice(0, 2)
 
 if (userLang.startsWith('es')){
-    ThanksConsole = 'Gracias por usar starton browser'
     greetingTimeMan = 'Buenos días'
     greetingTimeTar = 'Buenas tardes'
-    Startondownloadtitle = 'Descarga el Navegador Starton'
     error1characters = 'No use caracteres especiales como "#" o "&".'
     //
     document.title = 'Nueva pestaña'
 }
 else {
-    ThanksConsole = 'Thanks for use starton browser'
     greetingTimeMan = 'Good Morning'
     greetingTimeTar = 'Good afternoon'
-    Startondownloadtitle = 'Download the Starton Browser'
     error1characters = 'Do not use special characters such as "#" or "&".'
     //
     document.title = 'New Tab'

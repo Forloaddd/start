@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Loading...</title>
+  <script>
+    if (navigator.userAgent.indexOf("Starton") > -1) {} else {
+      window.location.assign("../notfound.html")
+    }
+  </script>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="shortcut icon" href="assets/img/iconSt.png" type="image/x-icon">
@@ -18,7 +23,7 @@
   <div class="wp"></div>
   <div id="engine-google"></div>
   <noscript>
-  <div class="fieldt" title="Error 881 - JavaScript is off - JavaScript no activado"></div>
+    <div class="fieldt" title="Error 881 - JavaScript is off - JavaScript no activado"></div>
   </noscript>
   <div class="greeting-start">
     <h5 id="time-txt" translate="no"></h5>
@@ -30,13 +35,6 @@
         <!-- form-control form-control-lg  -->
         <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg search-input" type="search"
             placeholder="Buscar o escribir dirección web" id="search-input" onfocusout="dsc()"></div>
-        
-     <!--      <div class="col-12 col-md-3">
-           <button class="btn btn-primary btn-block btn-lg" type="button" id="search-btn"><img
-              src="assets/img/search_30px.png" alt="Search" height="25px">
-            </button>
-          </div>
--->
       </div>
     </form>
     <!--***************************-->
