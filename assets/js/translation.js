@@ -20,7 +20,7 @@ else {
     //
     document.title = 'New Tab'
     //
-    $('.lw-link-draw').html('Do you like this wallpaper?')
+    $('.lw-link-draw').html('Like this background?')
     $('.lbl-cor').html('By <a href="https://github.com/Forloaddd/" class="link-cor" translate="no">Starton') 
     $('.modal-title').html('Settings') 
     $('#openNWI').html('Open in new browser tab')
